@@ -1,0 +1,51 @@
+@media (max-width:1200px){
+  .tasks{
+    display: none;
+  }
+}
+.tasks {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    @extend %container;
+  }
+  .tasks__title,
+  .team__title,
+  .clients__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: $title-text-color;
+  }
+  .tasks__list {
+    @extend %list;
+    display: flex;
+    gap: 30px;
+  }
+  .tasks__item {
+    width: calc((100% - 2 * 30px) / 3);
+    position: relative;
+  }
+  .tasks__img{
+    width: 100%;
+  }
+  .task__box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(48, 48, 58, 0.8);
+  }
+  .tasks__desc {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $light-bkg;
+  }
