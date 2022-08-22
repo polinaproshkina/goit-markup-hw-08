@@ -18,12 +18,18 @@
 }
 
 .footer-contacts__box{
+  @media (min-width:481px){
+    margin-right: 70px;
+  }
+  
+
   @media (max-width:480px){
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+
   }
 }
 .footer__logo {
@@ -47,7 +53,6 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 9px;
-  margin-right: 70px;
   @media (max-width:480px){
   margin-bottom: 0;
   margin-right: 0;
@@ -131,7 +136,7 @@
 }
 }
 .footer-subscribe__container{
-  margin-left:90px;
+  // margin-left:90px;
   @media (max-width:480px){
     width: 100%;
   }

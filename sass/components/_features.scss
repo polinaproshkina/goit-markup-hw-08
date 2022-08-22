@@ -1,3 +1,10 @@
+.features{
+  padding-top: 60px;
+  @media (max-width:1199px){  
+    padding-bottom: 60px;
+  }
+}
+
 .features__name {
     font-weight: 700;
     font-size: 14px;
@@ -36,16 +43,14 @@
     }
     @media (min-width:768px) and (max-width:1199px){
       width: calc((100% - 30px)/2);
-    &:nth-child(odd){
-      margin-right:30px;
-    }
-    &:nth-last-child(n+2){
-      margin-bottom:30px;
-    }
     }
     @media (max-width:767px){
       width: 100%;
+      &:not(:last-child){
+        margin-bottom: 30px;
+      }
     }
+
     &::before {
         display: block;
         content: '';
@@ -84,18 +89,18 @@
 }
   .features__container {
     @extend %container;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
     
   }
   .features__list {
     @extend %list;
+      gap:30px;
+
   @media (min-width:768px){
     display: flex;
     flex-wrap: wrap;
   }
   @media (min-width:1200px){
     flex-wrap: nowrap;
-    gap: 30px;
   }
  }

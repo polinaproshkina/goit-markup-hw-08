@@ -16,37 +16,37 @@
     @extend %list;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 
-    @media (min-width:768px){
-      gap: 30px;
-    }
     @media (min-width:1200px){
       flex-wrap: nowrap;
     }
         
   }
   .clients__title{
-    margin-bottom: 0;
+    margin-bottom: 0; 
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    margin-bottom: 30px;
+    @media (min-width:1200px){
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    }
+    
   }
   .clients__item {
     display: flexbox;
     align-items: center;
     justify-content: center;
     @media (max-width:767px){
-    margin-top: 30px;
     width: calc((100% - 2 * 15px) / 2);
     max-height: 92px;
     
-    &:nth-child(odd){
-      margin-right: 30px;
-    }
   }
     @media (min-width:768px){
       width: calc((100% - 4 * 15px) / 3);
   }
-  @media (min-width:1200px){
-    margin-top: 50px;
-  }
+  
 }
   .clients__icon {
     width: 106px;

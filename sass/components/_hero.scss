@@ -1,7 +1,6 @@
 .hero {
     background-color: #c4c4c4;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../img/bkg-hero.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/bkg-hero.jpg');
     max-width: 1600px;
     background-position: center;
     background-size: cover;
@@ -22,7 +21,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url('../img/bkg-hero2x.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/bkg-hero2x.jpg');
   }
   }
 
