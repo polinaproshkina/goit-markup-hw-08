@@ -35,26 +35,26 @@ img {
   display: inline-block;
 }
 
-.footer__container, .clients__container, .team__container, .tasks, .features__container, .hero__container, .menu-container, .header__container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.footer__container, .clients__container, .team__container, .tasks__container, .features__container, .hero__container, .menu-container, .header__container {
   /*outline: 2px solid red;*/
 }
+@media (max-width: 479px) {
+  .footer__container, .clients__container, .team__container, .tasks__container, .features__container, .hero__container, .menu-container, .header__container {
+    width: 100%;
+  }
+}
 @media (min-width: 480) {
-  .footer__container, .clients__container, .team__container, .tasks, .features__container, .hero__container, .menu-container, .header__container {
+  .footer__container, .clients__container, .team__container, .tasks__container, .features__container, .hero__container, .menu-container, .header__container {
     width: 480;
   }
 }
 @media (min-width: 768) {
-  .footer__container, .clients__container, .team__container, .tasks, .features__container, .hero__container, .menu-container, .header__container {
+  .footer__container, .clients__container, .team__container, .tasks__container, .features__container, .hero__container, .menu-container, .header__container {
     width: 768;
   }
 }
 @media (min-width: 1200px) {
-  .footer__container, .clients__container, .team__container, .tasks, .features__container, .hero__container, .menu-container, .header__container {
+  .footer__container, .clients__container, .team__container, .tasks__container, .features__container, .hero__container, .menu-container, .header__container {
     width: 1200px;
   }
 }
@@ -76,6 +76,8 @@ img {
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .header__logo {
@@ -663,11 +665,17 @@ img {
 
 .features {
   padding-top: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 @media (max-width: 1199px) {
   .features {
     padding-bottom: 60px;
   }
+}
+
+.features__container {
+  width: 100%;
 }
 
 .features__name {
@@ -783,6 +791,8 @@ img {
 .tasks {
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .tasks__title,
@@ -843,6 +853,8 @@ img {
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .team__title {
@@ -990,6 +1002,8 @@ img {
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -1077,6 +1091,8 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .footer__container {

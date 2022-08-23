@@ -5,9 +5,13 @@
 }
 .tasks {
     padding-top: 94px;
-    @extend %container;
     padding-bottom: 94px;
+    padding-right: 15px;
+    padding-left: 15px;
     
+  }
+  .tasks__container{
+    @extend %container;
   }
   .tasks__title,
   .team__title,

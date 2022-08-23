@@ -1,6 +1,8 @@
 .header {
     background-color: $light-bkg;
     border-bottom: 1px solid #ececec;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .header__logo {
     @extend %link;
